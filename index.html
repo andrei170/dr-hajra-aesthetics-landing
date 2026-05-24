@@ -62,6 +62,22 @@
   .hero-art .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(180deg,transparent,rgba(10,11,13,.82))}
   .hero-art .cap b{font-family:var(--serif);font-size:22px;font-weight:500;display:block;color:#fff}
   .hero-art .cap small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+  /* credentials band: doctor-led, award-winning, 13 years */
+  .creds-band{position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:
+    radial-gradient(620px 300px at 50% -20%,rgba(201,168,106,.10),transparent 64%),var(--bg)}
+  .creds-band .wrap{padding:74px 24px;text-align:center;max-width:980px}
+  .creds-band .eyebrow{margin-bottom:14px}
+  .creds-band h2{margin-bottom:10px}
+  .creds-band p.cb-lead{font-size:17px;color:var(--muted);max-width:620px;margin:0 auto 44px;font-weight:300}
+  .cb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .cb-card{position:relative;border:1px solid var(--line);border-radius:10px;padding:38px 26px 32px;background:var(--bg2);overflow:hidden;transition:transform .3s,border-color .3s}
+  .cb-card:hover{transform:translateY(-4px);border-color:rgba(201,168,106,.42)}
+  .cb-card:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,106,.5),transparent)}
+  .cb-card .ic{font-size:24px;color:var(--champ);margin-bottom:16px}
+  .cb-card .big{font-family:var(--serif);font-size:30px;color:var(--nude);font-weight:500;line-height:1.05;margin-bottom:8px}
+  .cb-card small{display:block;color:var(--muted);font-size:13.5px;line-height:1.6}
+  @keyframes glint{0%,100%{opacity:.5}50%{opacity:1}}
+  .cb-card .ic{animation:glint 4.5s ease-in-out infinite}
   .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
   .strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding:34px 24px}
   .strip .s{flex:1;min-width:190px}
@@ -131,7 +147,7 @@
 <header class="hero"><div class="wrap hero-grid">
   <div class="reveal in">
     <div class="tagline"><i></i>Doctor-led, award-winning aesthetics</div>
-    <h1>Aesthetics by a <em>doctor</em>, in Belsize Park.</h1>
+    <h1>Aesthetics by a <em>doctor</em>,<br>in Belsize Park.</h1>
     <p class="lead">A doctor-led clinic in NW3, delivered personally by Dr Hajra, a multi-award-winning medical doctor with 13 years across the NHS and private healthcare. Considered, bespoke, and led by real medical training.</p>
     <a href="#contact" class="btn">Book a consultation</a>
     <a href="#treatments" class="btn-ghost btn" style="margin-left:10px">Explore treatments</a>
@@ -139,7 +155,7 @@
   <div class="hero-art reveal in">
     <div class="mono">Belsize Park · NW3</div>
     <div class="mark">Dr Hajra<span>Aesthetics</span></div>
-    <div class="cap"><b>Every plan begins with the doctor</b><small>Dr Hajra · Founder</small></div>
+    <div class="cap"><b>Every plan begins with the doctor</b><small>Dr Hajra · Multi-award-winning · 13 years</small></div>
   </div>
 </div></header>
 
@@ -148,6 +164,17 @@
   <div class="s reveal"><b>Award-winning</b><small>A multi-award-winning doctor behind every treatment plan</small></div>
   <div class="s reveal"><b>13 years</b><small>Across the NHS and private healthcare</small></div>
   <div class="s reveal"><b>Belsize Park</b><small>In the heart of NW3, for Hampstead and Primrose Hill</small></div>
+</div></div>
+
+<div class="creds-band"><div class="wrap reveal">
+  <div class="eyebrow">Why a doctor</div>
+  <h2>Doctor-led. Award-winning. Thirteen years.</h2>
+  <p class="cb-lead">In a market full of non-medical injectors, the person planning and carrying out your treatment is a qualified medical doctor, every single time.</p>
+  <div class="cb-grid">
+    <div class="cb-card"><div class="ic">✦</div><div class="big">Doctor-led</div><small>Founded and run by Dr Hajra, a qualified medical doctor. The doctor who assesses you is the doctor who treats you.</small></div>
+    <div class="cb-card"><div class="ic">✦</div><div class="big">Award-winning</div><small>A multi-award-winning medical doctor behind every treatment plan, with the clinical judgement to match.</small></div>
+    <div class="cb-card"><div class="ic">✦</div><div class="big">13 years</div><small>Across the NHS and private healthcare, brought to every consultation in Belsize Park.</small></div>
+  </div>
 </div></div>
 
 <section id="treatments"><div class="wrap">
