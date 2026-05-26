@@ -9,6 +9,7 @@
 <meta property="og:title" content="Dr Hajra Aesthetics | Doctor-Led Aesthetics, Belsize Park">
 <meta property="og:description" content="Award-winning, doctor-led aesthetics in NW3, delivered personally by Dr Hajra.">
 <meta property="og:url" content="https://andrei170.github.io/dr-hajra-aesthetics-landing/">
+<meta property="og:image" content="https://andrei170.github.io/dr-hajra-aesthetics-landing/proof/venue.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dr Hajra Aesthetics | Doctor-Led Aesthetics, Belsize Park">
 <meta name="twitter:description" content="Award-winning, doctor-led aesthetics in NW3, delivered personally by Dr Hajra.">
@@ -50,18 +51,12 @@
   .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:52px;align-items:center}
   .tagline{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.5px;color:var(--champ);border:1px solid var(--line);border-radius:30px;padding:8px 16px;margin-bottom:26px}
   .tagline i{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-  /* design-led hero panel: typographic, no photo */
-  .hero-art{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px #000;border:1px solid var(--line);
-    background:
-      radial-gradient(420px 300px at 70% 12%,rgba(201,168,106,.28),transparent 60%),
-      radial-gradient(360px 320px at 18% 86%,rgba(205,183,158,.20),transparent 62%),
-      linear-gradient(160deg,#1b1e24,#14161a 70%)}
-  .hero-art .mono{position:absolute;top:22px;left:22px;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
-  .hero-art .mark{position:absolute;top:50%;left:50%;transform:translate(-50%,-58%);font-family:var(--serif);font-size:clamp(58px,9vw,96px);line-height:.92;color:var(--nude);text-align:center;font-weight:500}
-  .hero-art .mark span{display:block;font-style:italic;color:var(--champ)}
-  .hero-art .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(180deg,transparent,rgba(10,11,13,.82))}
-  .hero-art .cap b{font-family:var(--serif);font-size:22px;font-weight:500;display:block;color:#fff}
-  .hero-art .cap small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+  /* real founder photo: hero-side card */
+  .hero-photo{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px #000;border:1px solid var(--line)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .hero-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(180deg,transparent,rgba(10,11,13,.82))}
+  .hero-photo .cap b{font-family:var(--serif);font-size:22px;font-weight:500;display:block;color:#fff}
+  .hero-photo .cap small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
   /* credentials band: doctor-led, award-winning, 13 years */
   .creds-band{position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:
     radial-gradient(620px 300px at 50% -20%,rgba(201,168,106,.10),transparent 64%),var(--bg)}
@@ -95,13 +90,9 @@
   .band .tile .k{font-family:var(--serif);font-size:38px;color:var(--champ);font-weight:500;line-height:1}
   .band .tile small{color:var(--muted);font-size:13px;margin-top:8px;display:block}
   .doc{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
-  /* design-led founder panel: monogram, no photo */
-  .doc .pf{border-radius:8px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -36px #000;border:1px solid var(--line);position:relative;
-    background:
-      radial-gradient(360px 280px at 30% 20%,rgba(201,168,106,.26),transparent 62%),
-      linear-gradient(155deg,#1f232a,#14161a 72%)}
-  .doc .pf .mono{position:absolute;top:22px;left:22px;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
-  .doc .pf .init{position:absolute;top:50%;left:50%;transform:translate(-50%,-55%);font-family:var(--serif);font-size:clamp(86px,12vw,132px);color:var(--nude);font-weight:600}
+  /* founder panel: real photo */
+  .doc .pf{border-radius:8px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -36px #000;border:1px solid var(--line);position:relative}
+  .doc .pf img{width:100%;height:100%;object-fit:cover}
   .doc .pf .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(180deg,transparent,rgba(10,11,13,.8))}
   .doc .pf .cap b{font-family:var(--serif);font-size:20px;font-weight:500;display:block;color:#fff}
   .doc .pf .cap small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
@@ -152,10 +143,9 @@
     <a href="#contact" class="btn">Book a consultation</a>
     <a href="#treatments" class="btn-ghost btn" style="margin-left:10px">Explore treatments</a>
   </div>
-  <div class="hero-art reveal in">
-    <div class="mono">Belsize Park · NW3</div>
-    <div class="mark">Dr Hajra<span>Aesthetics</span></div>
-    <div class="cap"><b>Every plan begins with the doctor</b><small>Dr Hajra · Multi-award-winning · 13 years</small></div>
+  <div class="hero-photo reveal in">
+    <img src="proof/venue.jpg" alt="Dr Hajra, founder and lead doctor at Dr Hajra Aesthetics, Belsize Park">
+    <div class="cap"><b>Dr Hajra, Founder</b><small>Multi-award-winning medical doctor · 13 years</small></div>
   </div>
 </div></header>
 
@@ -198,8 +188,7 @@
 
 <section id="founder" style="background:var(--bg2)"><div class="wrap doc">
   <div class="pf reveal">
-    <div class="mono">The founder</div>
-    <div class="init">DH</div>
+    <img src="proof/venue.jpg" alt="Dr Hajra, founder and lead medical doctor at Dr Hajra Aesthetics">
     <div class="cap"><b>Dr Hajra</b><small>Founder · Medical Doctor</small></div>
   </div>
   <div class="reveal">
@@ -241,7 +230,7 @@
     <div class="q"><button>Who carries out the treatments? <span class="pl">+</span></button><div class="a"><p>Dr Hajra, the founder. The clinic is doctor-led, so the person assessing and planning your treatment is the qualified medical doctor performing it.</p></div></div>
     <div class="q"><button>What makes a doctor-led clinic different? <span class="pl">+</span></button><div class="a"><p>Dr Hajra is a multi-award-winning medical doctor with 13 years across the NHS and private healthcare. That clinical judgement shapes every plan, so treatment is assessed medically before anything is recommended.</p></div></div>
     <div class="q"><button>Will I look overdone? <span class="pl">+</span></button><div class="a"><p>No. The whole philosophy here is subtlety. The doctor would rather do less and have you look refreshed and like yourself than chase a trend.</p></div></div>
-    <div class="q"><button>How do I book? <span class="pl">+</span></button><div class="a"><p>Use the booking button on this page to arrange a consultation with Dr Hajra. We will confirm a time that suits you.</p></div></div>
+    <div class="q"><button>How do I book? <span class="pl">+</span></button><div class="a"><p>Book via Treatwell or contact the clinic directly to arrange a consultation with Dr Hajra at Parkstead Lodge, 31 Upper Park Rd, NW3 2UL. The clinic is open daily, 8am to 8pm.</p></div></div>
   </div>
   <div style="text-align:center;margin-top:36px"><a href="#contact" class="btn">Book a consultation</a></div>
 </div></section>
@@ -251,10 +240,11 @@
   <h2 class="reveal">Book your consultation.</h2>
   <div class="cgrid">
     <div class="reveal">
-      <p style="color:var(--muted);margin-bottom:18px">Dr Hajra Aesthetics is in Belsize Park, NW3, a calm space for Hampstead, Primrose Hill and St John's Wood. New clients are warmly welcomed.</p>
+      <p style="color:var(--muted);margin-bottom:18px">Dr Hajra Aesthetics is at Parkstead Lodge in Belsize Park, NW3, a calm space for Hampstead, Primrose Hill and St John's Wood. New clients are warmly welcomed.</p>
       <ul class="cinfo">
-        <li><b>Area</b> Belsize Park, NW3</li>
-        <li><b>Booking</b> Via the clinic website</li>
+        <li><b>Address</b> Parkstead Lodge, 31 Upper Park Rd, London NW3 2UL</li>
+        <li><b>Hours</b> Open daily, 8am to 8pm</li>
+        <li><b>Booking</b> Via Treatwell or the clinic directly</li>
         <li><b>Founder</b> Dr Hajra</li>
         <li><b>Credentials</b> Multi-award-winning medical doctor, 13 years</li>
       </ul>
@@ -264,7 +254,8 @@
         <div style="font-size:38px;margin-bottom:10px">✦</div>
         <h3 style="font-family:var(--serif);font-size:25px;font-weight:500">A consultation with Dr Hajra</h3>
         <p style="color:var(--muted);margin:10px 0 22px;font-size:15px">Tell us your goals. The doctor will tell you honestly what your skin needs.</p>
-        <a href="#" class="btn" style="width:100%">Book online</a>
+        <p style="color:var(--muted);margin:0 0 22px;font-size:14px">Parkstead Lodge, 31 Upper Park Rd, London NW3 2UL · Open daily, 8am to 8pm</p>
+        <a href="#" class="btn" style="width:100%">Book via Treatwell</a>
         <a href="#treatments" class="btn-ghost btn" style="width:100%;margin-top:10px">See treatments</a>
       </div>
     </div>
@@ -285,6 +276,6 @@
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   document.querySelectorAll('.q button').forEach(b=>b.addEventListener('click',()=>{b.parentElement.classList.toggle('open');b.querySelector('.pl').textContent=b.parentElement.classList.contains('open')?'−':'+';}));
 </script>
-<script>/*ag-form*/document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var w=document.createElement("div");w.style.cssText="padding:20px;text-align:center;font-weight:600";w.textContent="Thank you. We will be in touch shortly.";f.parentNode.replaceChild(w,f);});});</script>
+<script>/*ag-form*/document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var em=(f.querySelector("input[type=email]")||{}).value||"";fetch("https://formsubmit.co/ajax/andreigivero@gmail.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({email:em,page:document.title,_subject:"Demo enquiry: "+document.title,_template:"box"})}).catch(function(){});var w=document.createElement("div");w.style.cssText="padding:20px;text-align:center;font-weight:600";w.textContent="Thank you. We will be in touch shortly.";f.parentNode.replaceChild(w,f);});});</script>
 </body>
 </html>
